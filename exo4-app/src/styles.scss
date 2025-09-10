@@ -1,0 +1,91 @@
+html.dark-mode .divider {
+	background: linear-gradient(180deg, #ff6e40 0%, #e040fb 50%, #1976d2 100%) !important;
+	opacity: 1 !important;
+}
+html.dark-mode .divider {
+	background: linear-gradient(180deg, #ff6e40 0%, #e040fb 50%, #1976d2 100%) !important;
+	opacity: 1 !important;
+	z-index: 10;
+	border: none;
+}
+.content {
+	align-items: stretch;
+}
+
+.divider {
+	width: 2px;
+	background: linear-gradient(180deg, #ff6e40 0%, #e040fb 50%, #1976d2 100%);
+	margin-inline: 0.5rem;
+	min-height: 80px;
+	border-radius: 2px;
+	display: block;
+	opacity: 1;
+}
+
+html.dark-mode .divider {
+	background: linear-gradient(180deg, #ff6e40 0%, #e040fb 50%, #1976d2 100%) !important;
+	opacity: 1 !important;
+}
+.divider {
+	width: 2px !important;
+	min-height: 80px;
+	border-radius: 2px;
+	background: linear-gradient(180deg, #ff6e40 0%, #e040fb 50%, #1976d2 100%) !important;
+	opacity: 1 !important;
+	display: block !important;
+}
+
+@media screen and (max-width: 650px) {
+	.divider {
+		height: 2px !important;
+		width: 100% !important;
+		min-height: unset;
+		background: linear-gradient(90deg, #ff6e40 0%, #e040fb 50%, #1976d2 100%) !important;
+	}
+}
+html.dark-mode .divider {
+	background: var(--red-to-pink-to-purple-vertical-gradient) !important;
+	display: block !important;
+	opacity: 1 !important;
+	width: 1px !important;
+	min-height: 80px;
+	border-radius: 2px;
+}
+
+@media screen and (max-width: 650px) {
+	html.dark-mode .divider {
+		height: 2px !important;
+		width: 100% !important;
+		min-height: unset;
+		background: #fff !important;
+	}
+}
+body.dark-mode, html.dark-mode body {
+	background: #181a20 !important;
+	color: #e0e0e0 !important;
+}
+
+html.dark-mode .main,
+html.dark-mode .content,
+html.dark-mode .divider,
+html.dark-mode .pill,
+html.dark-mode input,
+html.dark-mode button,
+html.dark-mode ul,
+html.dark-mode li {
+	background: #181a20 !important;
+	color: #e0e0e0 !important;
+	border-color: #333 !important;
+}
+
+html.dark-mode input {
+	background: #222 !important;
+	color: #e0e0e0 !important;
+	border-color: #444 !important;
+}
+
+html.dark-mode button {
+	background: #333 !important;
+	color: #e0e0e0 !important;
+}
+/* You can add global styles to this file, and also import other style files */

@@ -1,0 +1,17 @@
+<!-- Ancien formulaire, mis en commentaire -->
+<!--
+<form (submit)="$event.preventDefault(); submit()" class="add-item-form">
+  <input type="text" [(ngModel)]="item" placeholder="Ajouter un article..." name="item" (keydown.enter)="addItem()" />
+    <button type="submit">Ajouter</button>
+</form>
+
+<!- --Version simple : input + bouton -->
+<div class="add-item-simple">
+  <!-- Liaison bidirectionnelle avec la variable item -->
+  <input type="text" [(ngModel)]="item" placeholder="Ajouter un article..." name="item" (keydown.enter)="addItem()" />
+  <!-- Clic sur le bouton déclenche submit() -->
+  <button (click)="submit()">Ajouter</button>
+</div>
+<div *ngIf="error" style="color: #e53935; text-align: center; margin-top: 0.5rem;">
+  {{ error }}
+</div>

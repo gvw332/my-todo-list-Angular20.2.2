@@ -1,0 +1,29 @@
+
+
+
+<div style="width:100%; display:flex; justify-content:center; align-items:center; margin-top:1.5rem; margin-bottom:1.5rem;">
+  <button (click)="toggleTheme()" style="padding:0.5rem 1.5rem; border-radius:20px; border:none; background:#222; color:#fff; font-weight:bold; cursor:pointer; box-shadow:0 2px 8px #0002; font-size:1.1rem;">
+    {{ isDarkMode ? '☀️ Mode Jour' : '🌙 Mode Nuit' }}
+  </button>
+</div>
+
+<main class="main">
+  <div class="content">
+    <div style="flex:1; display:flex; flex-direction:column; justify-content:flex-start; align-items:center;">
+      <app-add-item (add)="addItem($event)"></app-add-item>
+    </div>
+    <div class="divider" role="separator" aria-label="Divider"></div>
+    <div style="flex:2; display:flex; flex-direction:column; align-items:center;">
+      <div style="text-align:center; margin-bottom:1rem;">
+        <input type="text" [(ngModel)]="search" (ngModelChange)="onSearchChange()" placeholder="Rechercher..." style="padding:0.5rem 1rem; border-radius:4px; border:1px solid #ccc;" />
+        <div style="margin-top:0.5rem; color:#1976d2; font-weight:bold;">
+          Nombre d’articles : {{ filteredItems.length }}
+        </div>
+      </div>
+  <app-item-list [items]="filteredItems" (remove)="removeItem($event)" (edit)="editItem($event)"></app-item-list>
+    </div>
+  </div>
+</main>
+
+
+<router-outlet />
